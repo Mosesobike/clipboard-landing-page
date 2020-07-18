@@ -35,21 +35,21 @@ header img{
 }
 
 .btn-ios{
-    border-radius: 25px;
+    border-radius: 30px;
     border: 1px ;
     color:white;
     background-color: hsl(171, 66%, 44%);;
-    width: 215px;
+    width: 210px;
     height:50px;
     letter-spacing: 1px;
     box-shadow: 3px 3px hsl(171, 66%, 44%);
 }
 .btn-mac{
-    border-radius:50px;
+    border-radius:30px;
     color: white;
     background-color:hsl(223, 100%, 69%);
     border: 1px;
-    width: 215px;
+    width: 210px;
     height:50px;
     letter-spacing:1px;
     margin-left: 20px;
