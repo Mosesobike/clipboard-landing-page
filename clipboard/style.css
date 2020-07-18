@@ -1,4 +1,14 @@
 /* stylesheet for index.html*/
+@import url('https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@200&display=swap');
+*, *::before, *::after{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+/*.body{
+    font-family: 'Bai Jamjuree', sans-serif;
+}*/
 body{
     margin: 0 auto;
     font-family: 'Bai Jamjuree', sans-serif;
@@ -35,7 +45,7 @@ header img{
     box-shadow: 3px 3px hsl(171, 66%, 44%);
 }
 .btn-mac{
-    border-radius:25px;
+    border-radius:50px;
     color: white;
     background-color:hsl(223, 100%, 69%);
     border: 1px;
@@ -81,7 +91,7 @@ header img{
     text-align: center;
     margin-top:130px;
 }
-@media screen and (max-width:375px){
+@media only screen and (max-width:375px){
     body{
         margin:auto 0;
     }
@@ -113,7 +123,7 @@ header img{
         font-size:32px;
     }
 }
-@media screen and (max-width:756px){
+@media only screen and (max-width:756px){
     .content-container{
         display: flex;
         flex-direction: column;
@@ -132,5 +142,272 @@ header img{
     }
     .btn{
         width: 90%;
+    }
+}
+
+/* My part */
+
+.constImg{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1.250em 0;
+}
+
+.super-text h2{
+    font-size: 2.22rem !important;
+    font-weight: 600 !important;
+    color: #525252;
+
+}
+
+.super-text p{
+    font-size: 1.2rem;
+    font-weight: 400;
+    color: #979797;
+
+}
+
+.creat-cards{
+    display: flex;
+    flex-direction: row;
+}
+
+.create-item{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2.5rem auto;
+    padding: 2rem 0.75rem 4rem 0.75rem;
+    width: 50%;
+}
+
+.create-item img{
+    padding: 48px 12px;
+    width: 80px;
+    height: 160px;
+}
+
+.create-item p{
+    color: #979797;
+    font-size: 1.2rem;
+    width: 80%;
+}
+.create-item h3{
+    color: #525252;
+    font-size: 1.4rem;
+    padding: 0px 0px 12px;
+}
+
+.logo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+ }
+
+ .logo img{
+     margin: auto 40px;
+    padding: 4rem 0.75rem 4rem 0.75rem;
+ }
+.clipboard-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+ .clipboard-text p{
+     color: #979797;
+     font-size: 1.2rem;
+     font-weight: 400;
+     width: 720px;
+     height: 64px;
+     align-self: center;
+     text-align: center;
+ }
+
+ .clipboard-text h2{
+     font-size: 2.22rem;
+     color: #525252;
+     padding: 0px 0px 20px;
+     text-align: center !important;
+ }
+ 
+ .buton-clas{
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     justify-content: center;
+     list-style: none;
+ }
+
+ .buton-clas .buton1{
+     padding: 14.4px;
+     width: 210px;
+     height: 48px;
+     margin: 8px;
+     border-radius: 30px;
+     background-color: #00bdaa;
+     color: white;
+     border: none;
+     text-align: center;
+ }
+
+ .buton-clas .buton2{
+    padding: 14.4px;
+    width: 210px;
+    height: 48px;
+    margin: 8px;
+    border-radius: 30px;
+    background-color:#6b76ff;
+    color: white;
+    border: none;
+    text-align: center;
+}
+
+.buton-clas .buton1:hover{
+    background-color: #00918e;
+    color: white;
+}
+
+.buton-clas .buton2:hover{
+    background-color: #9656a1;
+    color: white;
+}
+
+footer{
+    background: #e8e8e8;
+    margin-top: 4rem;
+}
+.footer-elements{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.link{
+    
+    color: #979797;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.link:hover{
+    color:#3c4245;
+    opacity: 0.6;
+    text-decoration: none;
+}
+
+.footer-logo img{
+    width: 50px;
+    height: 50px;
+    margin: 2rem 0;
+}
+
+.footer-links{
+    display: flex;
+    flex-direction: column;
+}
+
+.socials .img1{
+  margin-left: 2rem;
+}
+
+
+@media only screen and (max-width:780px){
+
+    .creat-cards{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .create-item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 1.5rem auto;
+        padding: 1.5rem;
+        width: 100%;
+    }
+
+    .buton-clas{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        list-style: none;
+    }
+
+    .logo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+     }
+
+}
+
+@media only screen and (max-width:600px){
+    .logo{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+     }
+    
+     .logo img{
+         margin: auto 40px;
+        padding: 4rem 0.75rem 4rem 0.75rem;
+     }
+
+     .clipboard-text p{
+        color: #979797;
+        font-size: 1.2rem;
+        font-weight: 400;
+        width: 90%;
+        height: 64px;
+        margin-bottom: 3rem;
+        align-self: center;
+        text-align: center;
+    }
+    .clipboard-text h2{
+        font-size: 2.22rem;
+        color: #525252;
+        padding: 0px 0px 20px;
+        margin: 0 5px;
+        text-align: center !important;
+    }
+
+    .footer-elements{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .footer-logo img{
+        width: 50px;
+        height: 50px;
+        margin: 1rem auto;
+    }
+    
+    .footer-links{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        margin: 1rem 0;
+    }
+    
+    .socials{
+      margin: 1rem auto;
+    }
+    .socials .img1{
+        margin-left: 0.75rem ;
+
     }
 }
